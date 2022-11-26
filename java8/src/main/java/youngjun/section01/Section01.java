@@ -2,7 +2,7 @@ package youngjun.section01;
 
 /**
  * 자바에서 제대로 함수형 프로그래밍을 하기 위해 주의해야 할 포인트
- *
+ * <p>
  * 1. 함수형 인터페이스와 람다 표현식은 함수형 프로그래밍과 상관없이 사용 가능
  * 2. 순수 함수(Side-effect 없고, 상태가 없음)로 만들자
  * 3. 불변성을 보장하자
@@ -44,7 +44,7 @@ public class Section01 {
 
             @Override
             public void doIt() {
-                status = "Change";
+                status = "Change"; // 외부 값을 변경(불변성 보장x)
                 System.out.println(status);
             }
         };
